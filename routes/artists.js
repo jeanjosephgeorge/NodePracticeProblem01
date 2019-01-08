@@ -23,17 +23,17 @@ router.get('/artists',(req,res)=>{
     res.send(`<ul>${html}</ul>`)
 })
 
-router.get('/artists/:artistID',(req,res)=>{
-    let artists = req.app.get('artists');
-    let html = '';
+// router.get('/artists/:artistID',(req,res)=>{
+//     let artists = req.app.get('artists');
+//     let html = '';
 
-    let name =  artists.artists[req.param.artistID];
+//     let name =  artists.artists[req.param.artistID];
 
-    res.send(`
-        <h2>${artists.name}</h2>
-    `)
+//     res.send(`
+//         <h2>${artists.name}</h2>
+//     `)
 
-})
+//})
 
 
 
